@@ -6,7 +6,7 @@
   - Store and access song data using class attributes and methods.
 - Accomplish complex programming tasks using knowledge from previous modules.
 
-***
+---
 
 ## Key Vocab
 
@@ -22,12 +22,13 @@
   Exceptions can be anticipated and handled without disrupting the execution of
   the program.
 
-***
+---
 
 ## Introduction
 
-In this lab, we'll be dealing with a `Song` class. The `Song` class can produce
-individual songs. Each song has a name, an artist and a genre. We need our
+<!-- In this lab, we'll be dealing with a `Song` class. The `Song` class can produce
+individual songs. Each song has a name, an artist and a genre. We need our -->
+
 `Song` class to be able to keep track of the number of songs that it creates.
 
 ```py
@@ -77,7 +78,7 @@ Song.artist_count
 We'll accomplish this with the use of **class attributes** and **class
 methods**.
 
-***
+---
 
 ## Instructions
 
@@ -97,13 +98,13 @@ ninety_nine_problems.genre
 # "Rap"
 ```
 
-Create a class attribute, `count`. We will use this attribute to keep track of
+<!-- Create a class attribute, `count`. We will use this attribute to keep track of
 the number of new songs that are created from the `Song` class. Set this
-attribute equal to `0`.
-
+attribute equal to `0`. -->
+<!--
 At what point should we increment our `count` of songs? Whenever a new song is
 created. Your `__init__` method should call a class method
-`add_song_to_count()` that increments the value of `count` by one.
+`add_song_to_count()` that increments the value of `count` by one. -->
 
 Next, define the following class methods:
 
@@ -111,23 +112,23 @@ Next, define the following class methods:
 list. This list should contain only _unique genres_ — no duplicates! Think
 about what you'll need to do to get this method working:
 
-- You'll need a class attribute, let's call it `genres`, that is equal to an
-  empty list.
-- When should you add genres to the array? Whenever a new song is created.
+<!-- - You'll need a class attribute, let's call it `genres`, that is equal to an
+  empty list. -->
+<!-- - When should you add genres to the array? Whenever a new song is created.
   Your `__init__` method should add the genre of the song being created to
   the `genres` list. All genres should be added to the list. Control for
   duplicates when you code your `add_to_genres` class method, not when you add
   genres to the original `genres` list. We will want to know how many songs
-  of each genre have been created. We'll revisit that job a little later on.
+  of each genre have been created. We'll revisit that job a little later on. -->
 
-`add_to_artists()`: adds any new artists to a class attribute `artists`, a
+<!-- `add_to_artists()`: adds any new artists to a class attribute `artists`, a
 list. This list should only contain unique artists, just like the `genres`
 class attribute. Once again, thnk about what you need to do to implement this
-behavior:
+behavior: -->
 
-- You'll need a class attribute, `artists`, that is equal to an empty list.
-- When should you add artists to this array? Whenever a new song is
-  initialized. Your `__init__` method should add artists to the `artists`
+<!-- - You'll need a class attribute, `artists`, that is equal to an empty list. -->
+<!-- - When should you add artists to this array? Whenever a new song is
+  initialized. Your `__init__` method should add artists to the `artists` -->
   list. All artists should be added to the list. Control for duplicates when
   you code your `add_to_artists()` class method, not when you add artists to
   the original `artists` list. We will want to know how many songs each have
@@ -155,7 +156,7 @@ histogram? There are a few ways!
 `add_to_artist_count()`: creates a histogram similar to the one above, but for
 artists rather than genres.
 
-***
+---
 
 ## Resources
 
